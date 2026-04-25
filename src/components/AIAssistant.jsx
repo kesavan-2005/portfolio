@@ -76,6 +76,9 @@ const AIAssistant = () => {
     }
 
     // specific projects enquiry
+    if (text.match(/\b(multimodal|healthcare|allopathy|ayurveda|siddha|smart healthcare|decision support)\b/)) {
+      return "The Multimodal AI Healthcare System is a comprehensive platform integrating text, image, voice, and medical reports for disease prediction! It features SHAP Explainable AI and Med System Classification (Allopathy/Ayurveda/Siddha).";
+    }
     if (text.match(/\b(cancer|skin cancer)\b/)) {
       return "Kesavan built a Skin Cancer Detection system using CNNs and MobileNetV2! It features a Streamlit UI, Grad-CAM for explainable AI, and pdf report generation.";
     }
@@ -91,7 +94,7 @@ const AIAssistant = () => {
 
     // generic projects
     if (text.match(/\b(project|projects|portfolio|built|made|work)\b/)) {
-      return "Kesavan has 4 main projects highlighted:\n1. Skin Cancer Detection (CNN/MobileNetV2)\n2. AI Disease Detection System\n3. MindScan (Mental Health Detector)\n4. Rural Transport Management (Java/Docker)\n\nAsk me about any specific one!";
+      return "Kesavan has 5 main projects highlighted:\n1. Multimodal AI Healthcare System\n2. Skin Cancer Detection (CNN/MobileNetV2)\n3. AI Disease Detection System\n4. MindScan (Mental Health Detector)\n5. Rural Transport Management (Java/Docker)\n\nAsk me about any specific one!";
     }
 
     // experience / internships

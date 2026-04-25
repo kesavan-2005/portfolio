@@ -8,11 +8,11 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Animated Background Elements */}
       <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] dark:opacity-20"></div>
+        <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-neon-purple to-neon-cyan opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] dark:opacity-20 animate-blob"></div>
       </div>
       
       <div className="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
-        <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#9089fc] to-[#ff80b5] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem] dark:opacity-20 animate-pulse"></div>
+        <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-neon-cyan to-neon-purple opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem] dark:opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -22,7 +22,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-indigo-600 dark:text-indigo-400 font-semibold tracking-wide uppercase text-sm mb-4">
+            <p className="text-neon-cyan font-heading font-semibold tracking-wide uppercase text-sm mb-4 tracking-[0.2em]">
               Hello, I'm
             </p>
           </motion.div>
@@ -33,7 +33,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Kesavan <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">R</span>
+            Kesavan <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-neon-purple">R</span>
           </motion.h1>
           
           <motion.h2
@@ -65,7 +65,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               href="/Kesavan_R_Resume.pdf" 
               download
-              className="px-8 py-3 w-full sm:w-auto text-base font-medium rounded-full text-white bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 shadow-lg shadow-indigo-500/30 transition-all flex items-center justify-center gap-2"
+              className="px-8 py-3 w-full sm:w-auto text-base font-medium rounded-full text-white bg-gradient-to-r from-neon-cyan to-neon-purple shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:shadow-[0_0_30px_rgba(138,43,226,0.6)] transition-all flex items-center justify-center gap-2"
             >
               <ArrowDown size={18} />
               Download CV
@@ -75,7 +75,7 @@ const Hero = () => {
                 to="contact" 
                 smooth={true} 
                 duration={500}
-                className="px-8 py-3 w-full block text-center text-base font-medium rounded-full text-indigo-600 bg-indigo-50 hover:bg-indigo-100 dark:text-indigo-300 dark:bg-gray-800 dark:hover:bg-gray-700 transition-all cursor-pointer border border-indigo-100 dark:border-gray-700"
+                className="px-8 py-3 w-full block text-center text-base font-medium rounded-full text-white bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 dark:hover:border-neon-cyan/50 transition-all cursor-pointer"
               >
                 Contact Me
               </Link>

@@ -9,6 +9,15 @@
   .animation-delay-4000 {
     animation-delay: 4s;
   }
+  .glass-panel {
+    @apply bg-white/70 dark:bg-dark-card backdrop-blur-xl border border-gray-200/50 dark:border-dark-border shadow-lg;
+  }
+  .glass-panel-hover {
+    @apply hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(0,240,255,0.2)] dark:hover:border-neon-cyan/30 transition-all duration-300;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-neon-cyan to-neon-purple;
+  }
 }
 
 html {
@@ -16,9 +25,28 @@ html {
 }
 
 body {
-  @apply bg-gray-50 text-gray-900 transition-colors duration-300;
+  @apply bg-gray-50 text-gray-900 transition-colors duration-300 font-sans;
 }
 
 .dark body {
-  @apply bg-gray-900 text-gray-50;
+  @apply bg-dark-bg text-gray-50;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+/* Background blob effects */
+.bg-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+  opacity: 0.15;
+}
+.bg-blob-cyan {
+  background-color: theme('colors.neon.cyan');
+}
+.bg-blob-purple {
+  background-color: theme('colors.neon.purple');
 }

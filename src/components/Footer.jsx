@@ -4,14 +4,14 @@ import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
+    <footer className="bg-white dark:bg-dark-bg text-gray-900 dark:text-white pt-16 pb-8 border-t border-gray-200 dark:border-dark-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 border-b border-gray-800 pb-12">
           
           {/* Logo & Info */}
           <div className="mb-8 md:mb-0 text-center md:text-left">
             <Link to="home" smooth={true} duration={500} className="cursor-pointer font-extrabold text-3xl tracking-tighter mb-4 inline-block">
-              <span className="text-white">Kesavan </span><span className="text-indigo-500">R.</span>
+              <span className="text-gray-900 dark:text-white">Kesavan </span><span className="text-neon-cyan">R.</span>
             </Link>
             <p className="text-gray-400 max-w-sm mt-2 text-sm">
               Creating scalable, efficient, and future-ready digital products with a seamless integration of Web Tech and Machine Learning.

@@ -10,7 +10,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-800 transition-colors duration-300">
+    <section id="contact" className="py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <motion.div
@@ -21,10 +21,10 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
-          <div className="w-20 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto rounded-full shadow-[0_0_15px_rgba(0,240,255,0.5)]"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-gray-50 dark:bg-gray-900 rounded-3xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-800">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 glass-panel rounded-3xl overflow-hidden">
           
           {/* Contact Info */}
           <div className="p-10 lg:p-12 text-gray-900 dark:text-white flex flex-col justify-center">
@@ -73,7 +73,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="p-10 lg:p-12 bg-white dark:bg-gray-800">
+          <div className="p-10 lg:p-12 bg-white/5 dark:bg-dark-card border-t lg:border-t-0 lg:border-l border-gray-200 dark:border-dark-border">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Your Name</label>
@@ -112,8 +112,7 @@ const Contact = () => {
               </div>
               
               <button 
-                type="submit" 
-                className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold flex items-center justify-center gap-2 transition-all duration-300 shadow-md hover:shadow-xl"
+                className="w-full py-4 text-white bg-gradient-to-r from-neon-cyan to-neon-purple rounded-xl font-bold flex items-center justify-center gap-2 transition-all duration-300 shadow-[0_0_15px_rgba(0,240,255,0.4)] hover:shadow-[0_0_25px_rgba(138,43,226,0.6)]"
               >
                 <Send size={18} />
                 Send Message

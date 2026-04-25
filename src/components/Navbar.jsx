@@ -24,11 +24,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   ];
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
+    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'glass-panel !rounded-none !border-x-0 !border-t-0 shadow-sm' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="home" smooth={true} duration={500} className="cursor-pointer font-bold text-2xl tracking-tighter text-indigo-600 dark:text-indigo-400">
+            <Link to="home" smooth={true} duration={500} className="cursor-pointer font-bold text-2xl tracking-tighter text-neon-cyan">
               K<span className="text-gray-900 dark:text-white">R.</span>
             </Link>
           </div>
@@ -42,8 +42,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                activeClass="text-indigo-600 dark:text-indigo-400 font-semibold"
-                className="cursor-pointer text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium text-sm"
+                activeClass="text-neon-cyan font-semibold"
+                className="cursor-pointer text-gray-700 dark:text-gray-300 hover:text-neon-cyan transition-colors font-medium text-sm"
               >
                 {link.name}
               </Link>
