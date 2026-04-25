@@ -8,7 +8,7 @@ const Projects = () => {
       title: "Multimodal AI-Powered Healthcare System",
       description: "Built a Multimodal AI Healthcare System integrating text, image, voice, and medical reports for disease prediction. Features Missing Symptom Prediction, SHAP Explainable AI, Med System Classification, and a What-if Sandbox.",
       techStack: ["Machine Learning", "SHAP", "Streamlit", "AI"],
-      liveLink: "https://smart-healthcare-platform-nu.vercel.app/",
+      liveLink: "https://medguardian-ai-healthcare.vercel.app/",
       githubLink: "https://github.com/kesavan-2005",
       image: "/ai_healthcare.png"
     },
